@@ -513,6 +513,10 @@ body {
     box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
+.container-2 img:hover {
+        transform: rotate(-10deg); /* Ajusta el ángulo de rotación para desbalancear la imagen */
+}
+
 .contact-section {
     background-color: black;
     padding: 20px;
