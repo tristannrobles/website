@@ -234,6 +234,7 @@ body {
     margin-bottom: 40px;
     margin-top: 40px;
     color: white; /* Color del texto */
+    text-align: center;
 }
 
 .contenidos img {
