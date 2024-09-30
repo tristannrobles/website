@@ -92,6 +92,12 @@ body {
     display: block;
 }
 
+.blogEntries {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -192,40 +198,6 @@ body {
     margin-top: 15px;
 }
 
-
-
-
-/* Media Queries para Responsividad */
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .projects {
-        grid-template-columns: 1fr;
-        gap: 5px;
-    }
-
-    .back-to-top a {
-        font-size: 14px;
-        padding: 5px 10px;
-    }
-}
 
 .contenidos p {
     font-family: "Lato", sans-serif;
@@ -486,14 +458,6 @@ body {
 
  @media (max-width: 800px) {
     #galleria {
-     -moz-column-count:    2;
-     -webkit-column-count: 2;
-     column-count:         2;
-    }
- }
-
- @media (max-width: 400px) {
-    #galleria {
      -moz-column-count:    1;
      -webkit-column-count: 1;
      column-count:         1;
@@ -560,6 +524,78 @@ body {
 }
 
 
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .blogEntries {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .back-to-top a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .container-2 {
+        flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+        align-items: center; /* Centra el contenido horizontalmente */
+        text-align: center; /* Opcional: centra el texto */
+    }
+    
+    .contact-gif {
+        width: 100%; /* Asegura que la imagen ocupe el ancho completo del contenedor en móviles */
+        max-width: 400px; /* Controla el tamaño máximo de la imagen para que no sea demasiado grande */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .contact-section {
+        padding: 10px 20px; /* Añade algo de espacio alrededor del texto en móviles */
+    }
+
+    .contact-info h2 {
+        margin-top: 20px; /* Añade un margen superior para separar el texto de la imagen */
+    }
+
+    /* Senescencia Celular Styleframes */
+    .styleframe-container, .styleframe-container-2, .styleframe-container-3 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+
+    /*Tristitos */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 80px;
+        padding: 40px;
+    }
+}
   
 
   

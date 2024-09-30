@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'lottie/logo-animation.json' // Ruta a tu archivo de animación original
+        path: '../lottie/logo-animation.json' // Ruta a tu archivo de animación original
     });
 
     const logoAnimationAlt = lottie.loadAnimation({
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'lottie/second-animation.json' // Ruta a tu archivo de animación alternativo
+        path: '../lottie/second-animation.json' // Ruta a tu archivo de animación alternativo
     });
 
     const logoContainer = document.querySelector('.logo-container');
