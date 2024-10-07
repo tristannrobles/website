@@ -522,6 +522,17 @@ body {
 .contact-info a:hover {
     color:yellow;
 }
+.lista_inktober {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+}
+
+.lista_inktober img {
+    max-width: 50%; /* Reduce el ancho de la imagen a un tercio */
+    height: auto;   /* Mantiene la proporción de la imagen */
+}
+
 
 
 /* Media Queries para Responsividad */
